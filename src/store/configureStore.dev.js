@@ -10,8 +10,8 @@ const configureStore = (preloadedState) => {
     preloadedState,
     compose(
       applyMiddleware(thunk, createLogger()),
-      DevTools.instrument()
-    )
+      DevTools.instrument(),
+    ),
   );
   // if (module.hot) {
   //   // Enable Webpack hot module replacement for reducers
